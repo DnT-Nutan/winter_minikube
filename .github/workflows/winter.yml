@@ -15,7 +15,6 @@ jobs:
     - name: Build image inside Minikube
       run: |
         minikube image build -t winter-app:latest .
-        minikube images
 
     - name: Apply Kubernetes Manifests
       run: |
