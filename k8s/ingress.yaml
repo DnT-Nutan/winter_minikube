@@ -4,13 +4,13 @@ metadata:
   name: winter-ingress
 spec:
   rules:
-  - host: winter.local
+  - host: newton.frii.site
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: winter-service
+            name: winter-app-service
             port:
               number: 80
